@@ -53,7 +53,7 @@ class _HttpPackagePageState extends State<HttpPackagePage> {
                       // ignore: body_might_complete_normally_nullable
                       await httpGet(path: '/api/users?page=2').then((value) {
                     if (value["statusCode"] == 200) {
-                      debugPrint(value["data"][0]);
+                      debugPrint("${value['data'][0]}");
                       return showDialog(
                           context: context,
                           builder: (context) {
